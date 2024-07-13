@@ -1,15 +1,14 @@
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 
-// https://astro.build/config
 export default defineConfig({
-	site: "gocoool.github.io",
-	base: "/",
-	integrations: [sitemap()],
-	markdown: {
-		shikiConfig: {
-			theme: "material-theme-darker",
-			langs: [],
-		},
-	},
+  site: "https://gocoool.github.io",  // Ensure the URL is correct and starts with "https://"
+  base: "/",
+  integrations: [sitemap()],
+  markdown: {
+    shikiConfig: {
+      theme: "material-theme-darker",
+      langs: [],
+    },
+  },
 });
